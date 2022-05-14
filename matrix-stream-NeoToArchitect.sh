@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-ffmpeg  -f v4l2 -framerate 10 -video_size 320x240 -i /dev/video{video_device} \
+ffmpeg  -f v4l2 -framerate 10 -video_size 320x240 -i /dev/video2 \
   -filter_complex "[0:v]vignette,format=gbrp,lenscorrection=k1=0.2:k2=0.2[lensed]; \
   [lensed]split=9[v0][v1][v2][v3][v4][v5][v6][v7][v8]; \
   [v1]tpad=start=550[r1]; \
