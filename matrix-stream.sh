@@ -16,4 +16,4 @@ ffmpeg  -f v4l2 -framerate 10 -video_size 320x240 -i /dev/video0 \
   [r6][r7][r8]hstack=inputs=3[l3]; \
   [l1][l2][l3]vstack=inputs=3[outv]" \
   -map '[outv]' \
-  -preset ultrafast -vcodec libx264 -b 900k -f flv rtmp://cdg10.contribute.live-video.net/app/live_578647346_o3XmBGD2Yja98XHXCuv4Cd12nu0uJu
+  -preset ultrafast -vcodec libx264 -b 900k -f flv rtmp://cdg10.contribute.live-video.net/app/live_578647346_o3XmBGD2XXXXXXXXXXXXXXXXXXXXXX
